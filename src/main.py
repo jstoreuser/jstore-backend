@@ -56,7 +56,7 @@ with app.app_context():
     # Import models here to ensure they are registered with SQLAlchemy
     from src.models.order import Order # Import the Order model
     db.create_all()
-    print(f"Database tables created (if not exist) for {db_name}")
+    print(f"Database tables created (if not exist).")
 
 # Remove the default static file serving, Next.js will handle the frontend
 # @app.route('/', defaults={'path': ''})
